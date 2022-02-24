@@ -1,0 +1,8 @@
+[Unit]
+Description= This service alerts you when a user ssh into the server.
+
+[Service]
+Type=simple
+ExecStart=/home/cloud_user/scripts/python/sshalert/main.py
+Restart=always
+EnvironmentFile=/home/cloud_user/scripts/python/sshalert/credentials.env
